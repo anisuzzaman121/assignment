@@ -1,0 +1,256 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:ital@1&family=Poppins:wght@500&display=swap');
+
+/* color  */
+:root{
+    --orange:#ffa500;
+    --bolck:#131313;
+    --white: #FFFFFF;
+    --text-color:#737373;
+    --text:#727272;
+    --bg-color:rgba(255, 144, 14, 0.1);
+}
+/* ------------------------
+Manu 
+---------------------------- */
+*{
+    font-family: 'Courgette', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background: var(--bg-color);
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.nav h2{
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--bolck);
+}
+.nav h2 a{
+    text-decoration: none;
+    color: var(--bolck);
+}
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding-top: 10px;
+}
+ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--bolck);
+}
+.article{
+    width: 700px;
+    text-align: center;
+    position: relative;
+    left: 20%;
+}
+.article h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+.article button, .section-title button{
+    background-color: var(--orange);
+    margin-top: 14px;
+    width: 180px;
+    height: 60px;
+    border: 0px;
+    border-radius: 5px;
+}
+.article button a, .section-title button a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 20px;
+}
+/* Banner  */
+.banner{
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    left: 10%;
+
+}
+.banner img{
+    height: 100%;
+    width: 100%;
+}
+/* Time diction */
+.section-title{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 950px;
+    position: relative;
+    left: 15%;
+    gap: 30px;
+    margin-top: 85px;
+    margin-bottom: 130px;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+}
+.team-img img{
+    width: 100%;
+}
+.team-doc{
+    position: relative;
+    top: 15%;
+}
+.team-doc h2{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 25px;
+}
+.of-our{
+    color: var(--bolck);
+}
+.features{
+    color: var(--orange);
+}
+.team-doc p, .blogs-title p{
+    color: var(--text);
+    font-size: 12px;
+}
+.blogs-title{
+    position: relative;
+    left: 10%;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 90px;
+    margin-bottom: 130px;
+}
+.blogs-title img{
+    width: 100%;
+    height: 100%;
+}
+.blogs-title h2{
+    color: #131313;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 15px;
+}
+.h2::after {
+    content: "";
+    width: 5px;
+    height: 10%;
+    background: var(--orange);
+    position: absolute;
+    top: 7%;
+    left: -10px;
+    transform: translateY(-50%);
+  }
+
+.image{
+    width: 500px;
+    height: 950px;
+    background-image: url(../images/architect.png);
+}
+.blog{
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.blog h3{
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.image button{
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: 900;
+    font-size: 28px;
+    width: 190px;
+    height: 100px;
+    position: absolute;
+    top: 90%;
+    left: 44%;
+    border-radius: 5px;
+    line-height: 1;
+    border: none;
+}
+.image span{
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+.facts{
+    position: relative;
+    left: 10%;
+    width: 1000px;
+    gap: 90px;
+    margin-bottom: 130px;
+}
+.facts p{
+    color: var(--text);
+    font-size: 12px;
+    margin-bottom: 100px;
+    
+}
+.fact{
+    width: 500px;
+}
+.promat{
+    border: 1px solid var(--orange);
+    height: 170px;
+    width: 170px;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 5px;
+}
+.ichon{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 60px;
+    position: relative;
+    left: 5%;
+    width: 800px;
+}
+.promat h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.promat p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* width: 200px; */
+}
+.sponsors{
+    text-align: center;
+}
+.sponsors img{
+    width: 120px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.sponsor{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 100px;
+    width: 1000px;
+}
+.sponsors p{
+    width: 400px;
+    position: relative;
+    left: 30%;
+}
+.footer{
+    position: relative;
+    left: 9%;
+    width: 1020px;
+    height: 60px;
+    background-color: var(--bg-color);
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 5px;
+}
